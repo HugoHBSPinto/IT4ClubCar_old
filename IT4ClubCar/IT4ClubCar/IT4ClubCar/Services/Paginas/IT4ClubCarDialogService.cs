@@ -12,7 +12,8 @@ namespace IT4ClubCar.IT4ClubCar.Services.Paginas
     {
         public async Task MostrarMensagem(string mensagemAMostrar,string titulo)
         {
-            await Application.Current.MainPage.DisplayAlert("Aviso", mensagemAMostrar, "Cancel");
+            if(Application.Current.MainPage != null)
+                await Application.Current.MainPage.DisplayAlert("Aviso", mensagemAMostrar, "Cancel");
         }
     }
 }

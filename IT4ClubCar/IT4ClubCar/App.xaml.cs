@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 using Unity;
 using IT4ClubCar.IT4ClubCar.Interfaces;
 using IT4ClubCar.IT4ClubCar.Services.MudarPaginas;
+using IT4ClubCar.IT4ClubCar.Views;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace IT4ClubCar
@@ -24,7 +25,11 @@ namespace IT4ClubCar
             Container = new UnityContainer();
             Container.RegisterType<INavigationService, IT4ClubCarNavigationService>();
 
-			MainPage = new MainPage();
+            PaginaInicialView paginaInicial = new PaginaInicialView();
+
+            Application.Current.MainPage = paginaInicial;
+
+			MainPage = paginaInicial;
 		}
 
 		protected override void OnStart ()

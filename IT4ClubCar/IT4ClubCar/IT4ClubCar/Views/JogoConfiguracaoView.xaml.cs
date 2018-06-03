@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace IT4ClubCar.IT4ClubCar.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class JogoConfiguracao : ContentPage
+	public partial class JogoConfiguracaoView : ContentPage
 	{
-		public JogoConfiguracao ()
+		public JogoConfiguracaoView ()
 		{
 			InitializeComponent ();
 		}

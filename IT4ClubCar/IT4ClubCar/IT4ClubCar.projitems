@@ -20,7 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\INavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Models\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\ComunicacaoViewModels\MediadorMensagensService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\MudarPaginas\IT4ClubCarNavigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\MudarPaginas\IT4ClubCarNavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

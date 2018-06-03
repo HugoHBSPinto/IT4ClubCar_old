@@ -1,15 +1,28 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Unity;
+using IT4ClubCar.IT4ClubCar.Interfaces;
+using IT4ClubCar.IT4ClubCar.Services.MudarPaginas;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace IT4ClubCar
 {
 	public partial class App : Application
 	{
+        /// <summary>
+        /// Propriedade estática para poder ser utilizada por todas as classes que usem dependency injection.
+        /// </summary>
+        public static UnityContainer Container { get; set; }
+
+
+
 		public App ()
 		{
 			InitializeComponent();
+
+            Container = new UnityContainer();
+            Container.RegisterType<INavigationService, IT4ClubCarNavigationService>();
 
 			MainPage = new MainPage();
 		}

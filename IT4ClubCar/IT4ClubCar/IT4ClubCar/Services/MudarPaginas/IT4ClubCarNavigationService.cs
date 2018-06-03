@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace IT4ClubCar.IT4ClubCar.Services.MudarPaginas
 {
-    class IT4ClubCarNavigation : INavigationService
+    class IT4ClubCarNavigationService : INavigationService
     {
         public async Task NavegarParaPaginaInicial()
         {

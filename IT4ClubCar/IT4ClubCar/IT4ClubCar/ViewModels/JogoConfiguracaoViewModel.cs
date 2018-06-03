@@ -10,7 +10,7 @@ namespace IT4ClubCar.IT4ClubCar.ViewModels
     {
 
 
-        public JogoConfiguracaoViewModel(INavigationService navegationService) : base(navegationService)
+        public JogoConfiguracaoViewModel(INavigationService navegationService, IDialogService dialogService) : base(navegationService,dialogService)
         {
 
         }

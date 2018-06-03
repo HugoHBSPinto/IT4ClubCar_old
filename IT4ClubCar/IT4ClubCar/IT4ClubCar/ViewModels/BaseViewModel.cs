@@ -17,16 +17,22 @@ namespace IT4ClubCar_IT4ClubCar_ViewModels
     {
         //[Dependency] faz parte do Unity (biblioteca utilizada para IOC). Indica que é uma dependency property. Ou seja
         //vai obter o seu valor através de injection.
+
+        
         [Dependency]
         public INavigationService NavigationService { get; set; }
+
+        [Dependency]
+        public IDialogService DialogService { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
 
 
-        public BaseViewModel(INavigationService navigationService)
+        public BaseViewModel(INavigationService navigationService, IDialogService dialogService)
         {
             NavigationService = navigationService;
+            DialogService = dialogService;
         }
 
 

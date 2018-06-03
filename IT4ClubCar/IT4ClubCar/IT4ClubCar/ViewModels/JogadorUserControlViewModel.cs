@@ -6,9 +6,9 @@ using System.Text;
 
 namespace IT4ClubCar.IT4ClubCar.ViewModels
 {
-    class JogadorViewModel : BaseViewModel
+    class JogadorUserControlViewModel : BaseViewModel
     {
-        public JogadorViewModel(INavigationService navegationService) : base(navegationService)
+        public JogadorUserControlViewModel(INavigationService navegationService, IDialogService dialogService) : base(navegationService,dialogService)
         {
 
         }

@@ -23,6 +23,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\MudarPaginas\IT4ClubCarNavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\PaginaInicialViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogadorView.xaml.cs">
+      <DependentUpon>JogadorView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogoConfiguracaoView.xaml.cs">
       <DependentUpon>JogoConfiguracaoView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -46,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogoConfiguracaoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogadorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

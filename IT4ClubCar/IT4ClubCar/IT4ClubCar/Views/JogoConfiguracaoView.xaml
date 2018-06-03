@@ -46,10 +46,10 @@
 
                 <!-- Stack Layout com os jogadores. -->
                 <StackLayout Style="{StaticResource StackLayoutMetadeEcra}" Orientation="Horizontal">
-                    <control:JogadorView/>
-                    <control:JogadorView/>
-                    <control:JogadorView/>
-                    <control:JogadorView/>
+                    <control:JogadorUserControlView/>
+                    <control:JogadorUserControlView/>
+                    <control:JogadorUserControlView/>
+                    <control:JogadorUserControlView/>
                 </StackLayout>
 
             </StackLayout>

@@ -1,5 +1,5 @@
 ﻿using IT4ClubCar.IT4ClubCar.Interfaces;
-using IT4ClubCar.IT4ClubCar.Services.MudarPaginas;
+using IT4ClubCar.IT4ClubCar.Services.Paginas;
 using IT4ClubCar.IT4ClubCar.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace IT4ClubCar.IT4ClubCar.Views
 		public PaginaInicialView ()
 		{
 			InitializeComponent ();
-            BindingContext = new PaginaInicialViewModel(App.Container.Resolve(typeof(IT4ClubCarNavigationService), "_navigationService") as INavigationService);
+            BindingContext = new PaginaInicialViewModel(App.Container.Resolve(typeof(IT4ClubCarNavigationService), "NavegationService") as INavigationService, App.Container.Resolve(typeof(IT4ClubCarDialogService), "DialogService") as IDialogService);
         }
 	}
 }

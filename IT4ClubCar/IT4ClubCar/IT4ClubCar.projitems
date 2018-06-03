@@ -17,10 +17,13 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Helpers\MultiDicionario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\IDialogService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\INavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\IPastaProgramaService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Models\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\ComunicacaoViewModels\MediadorMensagensService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\MudarPaginas\IT4ClubCarNavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\Paginas\IT4ClubCarDialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\Paginas\IT4ClubCarNavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\JogadorUserControlViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\JogoConfiguracaoViewModel.cs" />
@@ -42,9 +45,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\DataAccess\" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\PaginaInicialView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -61,5 +61,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\DataAccess\" />
   </ItemGroup>
 </Project>

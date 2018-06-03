@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace IT4ClubCar.IT4ClubCar.Services.MudarPaginas
+namespace IT4ClubCar.IT4ClubCar.Services.Paginas
 {
     class IT4ClubCarNavigationService : INavigationService
     {

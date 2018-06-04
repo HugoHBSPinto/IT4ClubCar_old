@@ -17,17 +17,52 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Helpers\MultiDicionario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\IDialogService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\INavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Interfaces\IPastaProgramaService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Models\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\ComunicacaoViewModels\MediadorMensagensService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\MudarPaginas\IT4ClubCarNavigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\Paginas\IT4ClubCarDialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\Paginas\IT4ClubCarNavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\JogadorUserControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\JogoConfiguracaoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\ViewModels\PaginaInicialViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogadorUserControlView.xaml.cs">
+      <DependentUpon>JogadorUserControlView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogoConfiguracaoView.xaml.cs">
+      <DependentUpon>JogoConfiguracaoView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\PaginaInicialView.xaml.cs">
+      <DependentUpon>PaginaInicialView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\PaginaInicialView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogoConfiguracaoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\JogadorUserControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)IT4ClubCar\Services\DataAccess\" />
-    <Folder Include="$(MSBuildThisFileDirectory)IT4ClubCar\Views\" />
   </ItemGroup>
 </Project>

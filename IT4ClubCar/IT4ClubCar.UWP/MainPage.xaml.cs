@@ -21,7 +21,7 @@ namespace IT4ClubCar.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new IT4ClubCar.App());
+            LoadApplication(new Xamarin.Forms.Application());
         }
     }
 }

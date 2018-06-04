@@ -29,10 +29,27 @@ namespace IT4ClubCar_IT4ClubCar_ViewModels
 
 
 
+        /// <summary>
+        /// Construtor para ViewModel relativo a uma página e não um model.
+        /// É necessário passar instâncias do service de navegação e dialog.
+        /// </summary>
+        /// <param name="navigationService">Instância do serviço de navegegção para permitir ao viewmodel mudar de página.</param>
+        /// <param name="dialogService">Instância do service de dialogs para permitir ao viewmodel msotrar pop ups / mensagens.</param>
         public BaseViewModel(INavigationService navigationService, IDialogService dialogService)
         {
             NavigationService = navigationService;
             DialogService = dialogService;
+        }
+
+
+
+        /// <summary>
+        /// Construtor sem parâmetros para viewmodels que fazem wrap a models. Não necessita de instâncias do serviço de navegação
+        /// e dialogs pois não serão usados.
+        /// </summary>
+        public BaseViewModel()
+        {
+
         }
 
 

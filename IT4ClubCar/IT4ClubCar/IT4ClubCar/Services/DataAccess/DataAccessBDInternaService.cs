@@ -81,12 +81,27 @@ namespace IT4ClubCar.IT4ClubCar.Services.DataAccess
             ExecutarOperacao(() =>
             {
                 jogadorInativo = new JogadorViewModel(AcessoBD.Conexao.FindWithQuery<JogadorModel>("SELECT * FROM JogadorModel WHERE Ativo = 0;"));
-                
             });
 
             return jogadorInativo;
         }
-
+        
+        
+        
+        /// <summary>
+        /// Ativa um jogador, atualizando o campo Ativo, para verdadeiro.
+        /// </summary>
+        /// <param name="jogadorAAtivar">JogadorViewModel que representa o jogador a ativar na BD.</param>
+        public static void AtivarJogador(JogadorViewModel jogadorAAtivar)
+        {
+            ExecutarOperacao(() =>
+            {
+                AcessoBD.Conexao.Execute("UPDATE JogadorModel SET Ativo = 1 WHERE Id = ?", jogadorAAtivar.Id);
+            });
+        }
+        
+        
+        
         #endregion
 
 

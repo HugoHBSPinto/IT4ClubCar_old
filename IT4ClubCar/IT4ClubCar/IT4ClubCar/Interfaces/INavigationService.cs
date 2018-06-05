@@ -10,5 +10,7 @@ namespace IT4ClubCar.IT4ClubCar.Interfaces
         Task NavegarParaPaginaInicial();
 
         Task NavegarParaPaginaConfigurarJogo();
+
+        Task NavegarParaPaginaConfiguracaoJogador();
     }
 }

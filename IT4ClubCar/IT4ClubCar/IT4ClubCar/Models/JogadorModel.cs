@@ -6,7 +6,7 @@ using System.Text;
 
 namespace IT4ClubCar.IT4ClubCar.Models
 {
-    [Table("Jogador")]
+    [Table("JogadorModel")]
     class JogadorModel : BaseModel
     {
         /// <summary>
@@ -37,7 +37,7 @@ namespace IT4ClubCar.IT4ClubCar.Models
 
         public JogadorModel()
         {
-
+            
         }
 
 
